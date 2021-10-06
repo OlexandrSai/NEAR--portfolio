@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+
+.text-gradient{
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-purple-500;
+}
+.contact-link {
+    @apply flex justify-center w-14 h-14 bg-white rounded-md items-center;
+}
+.btn {
+    @apply inline-block bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg py-3 text-white font-bold text-center;
+}
+.btn:hover {
+    @apply transform scale-95 duration-200 text-gradient;
+}
+.btn:active{
+    @apply transform scale-90 duration-200 text-gradient;
+}
+
+
+@tailwind utilities;
+
+@layer utilities {
+    .h-333 {
+      height: 333px;
+    }
+    .max-w-350 {
+        max-width: 350px;
+    }
+    .h-500 {
+      height: 500px;
+    }
+    .max-h-500 {
+      max-height: 500px;
+    }
+    .text-xs {
+        font-size: 0.5rem;
+        line-height: 0.625rem;
+      }
+    .text-xxs {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+      }
+    .contact-shadow {
+        box-shadow: 0px 10px 75px rgba(0, 0, 0, 0.35);
+    }
+    .z-1 {
+        z-index: -1;
+    }
+    .z-2 {
+        z-index: -2;
+    }
+  }
